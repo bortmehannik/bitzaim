@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.separator {
+    position: relative;
+}
+
+.separator:before {
+    content: '';
+    position: absolute;
+    width: calc(100% - 20px);
+    height: 1px;
+    border-top: 1px dashed #dddfe6;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+input[type="number"]:hover,
+input[type="number"]:focus {
+    -moz-appearance: number-input;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
